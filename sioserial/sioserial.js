@@ -8,7 +8,7 @@ require('dotenv').config({ path: '/home/pi/ROBO_CONFIG.cfg' })
 
 //Setup Serialport START
 //CHANGEME - Serieller Port zu Arduino
-const port = new SerialPort("/dev/ttyAMA0", {
+const port = new SerialPort("/dev/pts/0", {
 	baudRate: 9600
 })
 console.log("Port init");
