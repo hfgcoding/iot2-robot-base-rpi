@@ -1,0 +1,17 @@
+{
+  "name": "siotoserial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sioserial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mjpeg-camera": "^2.0.0",
+    "serialport": "^9.0.0",
+    "socket.io": "^2.3.0"
+  }
+}
