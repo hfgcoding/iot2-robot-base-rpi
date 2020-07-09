@@ -2,13 +2,13 @@
 const SerialPort = require('serialport')
 const Readline = require('@serialport/parser-readline')
 
-//DONTCHANGEME - AWS-Serververbindung
-var socket = require('socket.io-client')('http://63.32.119.241:8080');
+//DONTCHANGEME - AWS-Serververbindung via SSH Tunnel
+var socket = require('socket.io-client')('http://localhost:5000');
 require('dotenv').config({ path: '/home/pi/ROBO_CONFIG.cfg' })
 
 //Setup Serialport START
 //CHANGEME - Serieller Port zu Arduino
-const port = new SerialPort("/dev/ttyACM0", {
+const port = new SerialPort("/dev/ttyAMA0", {
 	baudRate: 9600
 })
 console.log("Port init");
